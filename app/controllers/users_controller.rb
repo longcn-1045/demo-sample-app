@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:success] = "Welcome to the sample_app!"
-      redirect_to @user
+      redirect_to login_url
     else
       render :new
     end
